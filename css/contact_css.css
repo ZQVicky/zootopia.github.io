@@ -1,0 +1,200 @@
+/*   header   */
+
+body {
+  background-color:#e8e8ff;
+  margin: 0em;
+
+}
+
+/*  nav   */
+
+
+ nav > ul{
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #444;
+}
+
+ nav > ul li {
+  float:left;
+}
+
+ nav > ul li a{
+  display: block;
+  text-align:center;
+  padding:5px 30px 5px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color:#e8e8ff;
+
+}
+
+.active {
+  background-color:#e8e8ff;
+
+}
+.active  > a {
+  color: #444;
+}
+
+ li a:hover {
+  background-color: #222;
+}
+
+.right {
+  float:right;
+}
+
+
+
+.dropdown {
+  display: none;
+}
+
+
+/*  nav bar reference:
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+*/
+
+
+/*    body    */
+
+@media screen and (max-width: 975px) {
+
+    .nav {
+          display: none;
+        }
+
+    .dropbtn {
+        width: 100vw;
+        background-color: #333;
+          color: #e8e8ff;
+          padding: 10px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+    .dropdown-content {
+        font-weight: 600;
+        display: none;
+        position: absolute;
+        background-color: rgba(12, 12, 13, 0.63);
+        width: 100vw;
+      }
+
+    .dropdown-content a {
+        color: #e8e8ff;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+      }
+
+    .dropdown-content a:hover {
+        background-color: rgba(51, 51, 51, 0.72);
+      }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+    .dropdown:hover .dropbtn {
+        background-color: #333;
+      }
+
+    }
+
+    /*  dropdown reference : https://www.w3schools.com/css/css_dropdowns.asp
+    example:
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
+
+    <div class="dropdown">
+      <span>Mouse over me</span>
+      <div class="dropdown-content">
+        <p>Hello World!</p>
+      </div>
+    </div>
+    Try it Yourself »
+    */
+
+
+    /*       body       */
+    .container {
+
+      display:flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      border: 3px solid #444;
+      border-radius: 30px;
+      margin: 1em;
+      height: 90vh;
+      background-image:url('../images/contact/logo.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      background-color: rgba(250, 243, 201, 0.66)
+
+    }
+
+    .content {
+
+      background-color: rgba(232, 232, 255, 0.85);
+      border-radius: 30px;
+      border: 3px dotted #444;
+      margin: 1em;
+      padding: 2em;
+      font-family: sans-serif;
+      font-style:oblique;
+      color: #444;
+      height: auto;
+      width: 43vw;
+    }

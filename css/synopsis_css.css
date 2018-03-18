@@ -1,0 +1,276 @@
+/*   header   */
+
+body {
+  background-color:#e8e8ff;
+  margin: 0em;
+}
+/*  nav   */
+
+.nav {
+  width: 100vw;
+}
+ nav > ul{
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #444;
+}
+
+ nav > ul li {
+  float:left;
+}
+
+ nav > ul li a{
+  display: block;
+  color: #e8e8ff;
+  text-align:center;
+  padding:5px 30px 5px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav > ul li a span{
+  color: #444;
+}
+
+.active {
+  background-color: #e8e8ff;
+}
+
+ li a:hover {
+  background-color: #222;
+}
+
+.right {
+  float:right;
+}
+
+.dropdown {
+  display: none;
+}
+
+/*  nav bar reference:
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+*/
+
+@media screen and (max-width: 975px) {
+
+    .nav {
+          display: none;
+          margin: 0;
+        }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+          }
+
+
+    .dropbtn {
+        width: 100vw;
+        background-color: #333;
+        color: #e8e8ff;
+        padding: 10px;
+        margin-bottom: 0;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        }
+
+
+    .dropdown-content {
+        margin:0;
+        font-weight: 600;
+        display: none;
+        position: absolute;
+        background-color: rgba(12, 12, 13, 0.63);
+        width: 100vw;
+      }
+
+    .dropdown-content a {
+        color: #e8e8ff;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+      }
+
+    .dropdown-content a:hover {
+        background-color: rgba(51, 51, 51, 0.72);
+      }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+    .dropdown:hover .dropbtn {
+        background-color: #333;
+      }
+
+    }
+
+    /*  dropdown reference : https://www.w3schools.com/css/css_dropdowns.asp
+    example:
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
+
+    <div class="dropdown">
+      <span>Mouse over me</span>
+      <div class="dropdown-content">
+        <p>Hello World!</p>
+      </div>
+    </div>
+    Try it Yourself »
+    */
+
+
+/*   body    */
+
+.container {
+  border-radius: 30px;
+  margin: 1em;
+  border: 3px solid #444;
+  display: flex;
+  justify-content: space-around;
+  background-image:url('../images/Synopsis/back.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+iframe {
+  border-radius: 30px;
+  margin: 4.5em 1em 0.5em 1em;
+  height: 46vh;
+  width: 50vw;
+  float: right;
+}
+
+.article {
+  border: 3px dotted #444;
+  border-radius: 30px;
+  margin: 1em;
+  padding-bottom: 1em;
+  height: auto;
+  width: 100vw;
+  background-color:rgba(217, 219, 219, 0.6);
+}
+
+.section {
+  /* padding: 1em; */
+  margin: 0em;
+  font-weight: 500;
+  font-size: 20px;
+  font-family:sans-serif;
+  text-align: justify;
+
+}
+
+.section p {
+  margin: 0.5em 1em 1em 1em;
+}
+
+section > h3 {
+  background-color: rgba(250, 243, 201, 0.54);
+  margin:0;
+  padding: 0.25em 1em 0.25em 1.5em;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom: 3px dotted #444;
+  font-size: 30px;
+}
+
+
+    @media  (max-width: 1025px){
+
+    body {
+      margin: 0;
+    }
+
+      .container {
+        width: auto;
+      }
+
+      .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 85vw;
+        height: auto;
+        margin: 1em;
+      }
+
+      section > h3 {
+        background-color: rgba(250, 243, 201, 0.54);
+        margin:0;
+        border-radius:30px;
+        border-top: 3px dotted #444;
+        border-bottom: 3px dotted #444;
+        font-size: 30px;
+      }
+
+      div {
+        margin: 1em;
+        width: auto;
+        height: auto;
+      }
+      iframe {
+        border-radius: 30px;
+        margin: 0em;
+        height: 40vh;
+        width: 80vw;
+      }
+
+      .section p {
+        margin: 1em;
+        font-weight: 500;
+        font-size:18px;
+        font-family:sans-serif;
+
+
+      }
+
+
+
+    }

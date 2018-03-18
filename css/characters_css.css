@@ -1,0 +1,508 @@
+
+body {
+  margin: 0em;
+  background-color:#e8e8ff;
+}
+
+/*  nav   */
+
+ nav > ul{
+  list-style: none;
+  margin: 0 ;
+  overflow: hidden;
+  background-color: #444;
+}
+
+ nav > ul li {
+  float:left;
+}
+
+ nav > ul li a{
+  display: block;
+  color: #e8e8ff;
+  text-align:center;
+  padding:5px 30px 5px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #e8e8ff;
+}
+
+nav > ul li a span {
+  color: #444;
+}
+
+li a:hover {
+  background-color: #222;
+}
+
+li a span:hover {
+  clear: both;
+
+}
+
+#right {
+  float:right;
+}
+
+.dropdown {
+  display: none;
+}
+
+/*  nav bar reference:
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+*/
+
+@media screen and (max-width: 975px) {
+
+    body {
+        margin:0;
+    }
+
+    .nav {
+          display: none;
+        }
+
+    .dropbtn {
+        width: 100vw;
+        background-color: #333;
+        color: #e8e8ff;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+    .dropdown-content {
+        font-weight: 600;
+        display: none;
+        position:absolute;
+        background-color: rgba(12, 12, 13, 0.63);
+        width: 100vw;
+      }
+
+    .dropdown-content a {
+        color: #e8e8ff;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+      }
+
+    .dropdown-content a:hover {
+        background-color: rgba(51, 51, 51, 0.72);
+      }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+    .dropdown:hover .dropbtn {
+        background-color: #333;
+      }
+
+    }
+
+    /*  dropdown reference : https://www.w3schools.com/css/css_dropdowns.asp
+    example:
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
+
+    <div class="dropdown">
+      <span>Mouse over me</span>
+      <div class="dropdown-content">
+        <p>Hello World!</p>
+      </div>
+    </div>
+    Try it Yourself »
+    */
+
+
+/*   body    */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color:#e8e8ff;
+}
+
+.box {
+  display:flex;
+  border-radius: 30px;
+  height: auto;/*43vh;*/
+  width: 97vw;
+  border: 3px solid #444;
+  margin: 1em 1em 0 1em;
+  background-color:  rgba(250, 243, 201, 0.72);
+}
+
+.characters {
+  margin: 1em 0em 1em 1em;
+  border-radius: 30px;
+  height: auto;/*38vh;*/
+  width: 37vw;
+
+}
+
+
+.descriptions {
+  border-radius: 30px;
+  margin: 1em;
+  height: auto;/*37vh;*/
+  width: 57vw;
+  border: 4.5px dotted #444;
+  background-color: rgba(232, 232, 255, 0.9);
+}
+
+img {
+  display: flex;
+  border-radius: 30px;
+  margin: 0;
+  border-radius: 30px;
+  height: auto;/*38vh;*/
+  width: 37vw;
+  align-items: flex-end;
+}
+
+em {
+  font-size: 28px;
+}
+p {
+  text-align: justify;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family:sans-serif;
+  padding: 0 1em 1em 1em;
+}
+
+span > img {
+  height: 49vh;
+  width: 45.5vw;
+}
+.left {
+  border-radius: 30px;
+  margin: 1em;
+  border: 3px solid #000;
+  height: 50vh;
+  width: 50vw;
+  background-image: url('../images/characters/pen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer > div h1{
+  font-style: italic;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  height: 240px;
+}
+.right {
+  display: flex;
+  align-items: flex-end;
+  border-radius: 30px;
+  margin: 1em 1em 1em 0;
+  border: 3px solid #000;
+  height: 50vh;
+  width: 47vw;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+}
+
+
+@media screen and (min-width: 780px) and (max-width: 1024px){
+
+  .box {
+    justify-content: space-around;
+    height:auto;
+  }
+
+  img {
+    border-radius: 30px;
+    height: auto;/*43vh;*/
+    width: 40vw;
+  }
+
+  .characters {
+    margin: 1em 0em 1em 1em;
+    border-radius: 30px;
+    height: auto;/*35vh;*/
+    width: 40vw;
+
+  }
+
+  .descriptions {
+    border-radius: 30px;
+    margin: 1em;
+    height: auto;/*47vh*/
+    width: 50vw;
+    border: 4px dotted black;
+    background-color: #e8e8ff;
+  }
+
+  .left {
+    border-radius: 30px;
+    margin: 1em;
+    border: 3px solid #000;
+    height: 35vh;
+    width: 50vw;
+    background-image: url('../images/characters/pen.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .right {
+    border-radius: 30px;
+    margin: 1em;
+    border: 3px solid #000;
+    height: 35vh;
+    width: 47vw;
+  }
+
+  span > img {
+    height: 35vh;
+    width: 45vw;
+  }
+}
+
+@media screen and (min-width: 751px) and (max-width: 779px){
+
+  .box {
+    justify-content: space-around;
+    height:auto; /*32vh;*/
+  }
+
+  img {
+    border-radius: 30px;
+    height: auto;/*27vh;*/
+    width: 40vw;
+  }
+
+  .characters {
+    margin: 1em 0em 1em 1em;
+    border-radius: 30px;
+    height: auto;/*26vh;*/
+    width: 40vw;
+
+  }
+
+  .descriptions {
+    border-radius: 30px;
+    margin: 1em;
+    height: auto;/*26vh;*/
+    width: 50vw;
+    border: 4px dotted black;
+    background-color: #e8e8ff;
+  }
+
+  p {
+    text-align: justify;
+    color: black;
+    font-size:12px;
+    font-weight: 400;
+    font-family:sans-serif;
+    padding: 0 1em 1em 1em;
+  }
+
+  .right  {
+    height: auto;/*27vh;*/
+    width: 50vw;
+  }
+
+  .left {
+    height: auto;/*27vh;*/
+    width:50vw;
+  }
+  footer > div a span img {
+    height: auto;/*26.7vh;*/
+    width: 45vw;
+  }
+
+
+}
+
+@media screen and (min-width:501px)and (max-width: 750px){
+
+  .box{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90vw;
+    margin: 1em;
+  }
+
+  img {
+    border-radius: 30px;
+    margin: 0;
+    height: auto;/*45vh;*/
+    width: 85vw;
+  }
+
+  .characters {
+    margin: 1em;
+    border-radius: 30px;
+    height: auto;/*45vh;*/
+    width: 85vw;
+
+  }
+
+  .descriptions {
+    border-radius: 30px;
+    margin: 1em;
+    height: auto;
+    width: auto;
+    border: 4px dotted black;
+    background-color: #e8e8ff;
+  }
+
+  p {
+    text-align: justify;
+    color: black;
+    font-size: 18.5px;
+    font-weight: 400;
+    font-family:sans-serif;
+    padding: 0 1em 0em 1em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right  {
+    margin-left:1em;
+    height: auto;/*47vh;*/
+    width: 90vw;
+  }
+
+  .left {
+    height: auto;/*47vh;*/
+    width:90vw;
+  }
+
+  footer > div a span img {
+    height:auto; /*47vh;*/
+    width: 90vw;
+  }
+
+
+}
+
+@media screen and (max-width: 500px){
+
+  .box{
+  display: flex;
+  flex-direction: column;
+  height: auto;/*100vh;*/
+  width: 90vw;
+  margin: 1em;
+  }
+
+  img {
+    border-radius: 30px;
+    margin: 0;
+    height: auto;/*30vh;*/
+    width: 80vw;
+  }
+
+  .characters {
+    margin: 1em;
+    border-radius: 30px;
+    height: auto;/*30vh;*/
+    width: 80vw;
+
+  }
+
+  .descriptions {
+    border-radius: 30px;
+    margin: 1em;
+    height: auto;/*60vh;*/
+    width: 80vw;
+    border: 4px dotted black;
+    background-color: #e8e8ff;
+  }
+
+  p {
+    text-align: justify;
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    font-family:sans-serif;
+    padding: 0 1em 0em 1em;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right  {
+    margin-left:1em;
+    height: auto;
+    width: 90vw;
+  }
+
+  .left {
+    height: auto;
+    width:90vw;
+  }
+
+  footer > div a span img {
+    height: auto;/*35vh;*/
+    width: 89.5vw;
+  }
+}

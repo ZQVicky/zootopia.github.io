@@ -1,0 +1,179 @@
+body {
+  background-image:  url('../images/homepage/judy_back.gif');
+  height: 100vh;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin:1em 0 0 0;
+}
+
+
+
+.header {
+  text-align:center;
+  background: rgba(245, 240, 230, 0.04);
+  background-size:contain;
+  margin-top: 1em;
+  }
+
+.title h2{
+  text-align: center;
+  font-family: fantasy;
+  font-size: 85px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.nav {
+  position: relative;
+  top: -20px;
+  margin:0;
+  padding: 0;
+}
+ .nav ul{
+  list-style: none;
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.72);
+}
+
+ .nav li {
+  float:left;
+}
+
+ .nav li a{
+  display: block;
+  color: #e8e8ff;
+  text-align:center;
+  padding:5px 30px 5px 30px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav .active {
+  float:right;
+}
+
+li a:hover {
+  background-color: rgb(51, 49, 49);
+}
+
+.dropdown {
+  display: none;
+}
+
+/*  nav bar reference:
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+*/
+
+
+@media screen and (max-width: 975px) {
+
+    .title h2 {
+      font-size: 3em;
+    }
+
+    .nav {
+      display: none;
+    }
+    .dropbtn {
+      width: 100vw;
+      background-color: rgba(51, 51, 51, 0.72);
+      color: #e8e8ff;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+
+    }
+
+    .dropdown-content {
+      font-weight: 600;
+      display: none;
+      position: absolute;
+      background-color: rgba(12, 12, 13, 0.53);
+      width: 100vw;
+    }
+
+    .dropdown-content a {
+      color: #e8e8ff;
+      padding: 10px;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: rgba(51, 51, 51, 0.72);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: rgba(40, 39, 39, 0.8);
+    }
+
+          /*  dropdown reference : https://www.w3schools.com/css/css_dropdowns.asp
+          example:
+          .dropdown {
+              position: relative;
+              display: inline-block;
+          }
+
+          .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              padding: 12px 16px;
+              z-index: 1;
+          }
+
+          .dropdown:hover .dropdown-content {
+              display: block;
+          }
+          </style>
+
+          <div class="dropdown">
+            <span>Mouse over me</span>
+            <div class="dropdown-content">
+              <p>Hello World!</p>
+            </div>
+          </div>
+          Try it Yourself »
+          */
+
+
+}
