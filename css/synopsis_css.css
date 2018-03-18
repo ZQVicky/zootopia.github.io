@@ -174,7 +174,7 @@ li a:hover {
   border: 3px solid #444;
   display: flex;
   justify-content: space-around;
-  background-image:url('../images/Synopsis/back.jpg');
+  background-image:url('images/Synopsis/back.jpg');
   background-position: center;
   background-size: cover;
 }
